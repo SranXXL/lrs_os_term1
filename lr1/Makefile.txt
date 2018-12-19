@@ -1,0 +1,10 @@
+CFLAGS = -fsanitize=address
+
+
+
+ALL:
+
+	
+	cppcheck arc.c
+	
+	gcc -o arc arc.c $(CFLAGS)
